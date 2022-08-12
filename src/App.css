@@ -183,6 +183,7 @@ nav {
     padding: 0 5%;
   }
   .pokedex-grid{
+    margin: 0 auto;
     grid-template-columns: 1fr;
   } 
 }
