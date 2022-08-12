@@ -162,3 +162,14 @@ nav {
   filter: drop-shadow(#702963 1px 2px);
   
 }
+
+.waterType{
+  background: #00bfffc0;
+  filter: drop-shadow(#00bfff 1px 2px);
+}
+
+.flyingType{
+  background:#ecf3f9;
+  filter: drop-shadow(#ecf3f9 1px 2px);
+  color: #000;
+}

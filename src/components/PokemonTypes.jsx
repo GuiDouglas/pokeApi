@@ -8,7 +8,9 @@ export function PokemonTypes(props){
       constructor(){
         this.grass = false,
         this.fire = false,
-        this.poison = false
+        this.poison = false,
+        this.water = false,
+        this.flying = false
       }
     }
 
@@ -19,6 +21,8 @@ export function PokemonTypes(props){
         types.grass = false
         types.fire = false
         types.poison = false
+        types.water = false
+        types.flying = false
 
         if(type.type.name == "grass"){
           types.grass = true
@@ -26,13 +30,19 @@ export function PokemonTypes(props){
           types.fire = true
         }else if(type.type.name == "poison"){
           types.poison = true
+        }else if(type.type.name == "water"){
+          types.water = true
+        }else if(type.type.name == "flying"){
+          types.flying = true
         }
 
         return (
           <div key={index} className={classNames("pokemon-type", {
             'grassType': types.grass,
             'fireType': types.fire,
-            'poisonType': types.poison
+            'poisonType': types.poison,
+            'waterType': types.water,
+            'flyingType': types.flying,
           })}>
             {type.type.name}
           </div>
