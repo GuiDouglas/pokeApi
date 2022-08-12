@@ -178,7 +178,28 @@ nav {
   color: #000;
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 425px){
+  *{
+    font-size: 12px;
+  }
+
+  .pokedex-grid{
+    grid-template-columns: 1fr;
+    max-width: 92%;
+    margin: 0 auto;
+  }
+  
+  .pokemon-card{
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .pokemon-card img{
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 769px){
   body{
     padding: 0 5%;
   }
