@@ -5,6 +5,10 @@
 
 }
 
+body{
+  padding: 0 3%;
+}
+
 nav {
   height: 100px;
   display: flex;
@@ -126,7 +130,7 @@ nav {
   width: 90px;
 }
 
-.pokemon-heart-btn{
+.pokemon-heart-btn{ 
   padding: 5px;
   background-color: transparent;
   border: 1px solid #ddd3;
@@ -174,11 +178,20 @@ nav {
   color: #000;
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 769px){
   body{
     padding: 0 5%;
   }
   .pokedex-grid{
     grid-template-columns: 1fr;
+  } 
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px){
+  body{
+    padding: 0 3%;
+  }
+  .pokedex-grid{
+    grid-template-columns: repeat(2, 1fr);
   } 
 }
